@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="35px" viewBox="0 0 110 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.9">
+        <g id="Product" transform="translate(-131.000000, -32.000000)">
+            <g id="header" transform="translate(131.000000, 32.000000)">
+                <g id="logo">
+                    <polygon id="Triangle" fill="#FF5458" points="17.5 0 35 35 0 35"></polygon>
+                    <polygon id="Triangle" fill="#2A3E69" points="92.3167539 0 109.816754 35 74.8167539 35"></polygon>
+                    <polygon id="Triangle" fill="#FFD123" points="42.6832461 0 60.1832461 35 25.1832461 35"></polygon>
+                    <polygon id="Triangle" fill="#BBDAD4" points="67.1335079 0 84.6335079 35 49.6335079 35"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
