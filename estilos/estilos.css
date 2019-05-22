@@ -1,0 +1,72 @@
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #2a3e69;
+  --light-pink: #ffc1bd;
+  --pink: #ff5458;
+  --gray: #7b89a4;
+  --light-gray: #e0e6ee;
+  --light-green: #bbdad4;
+  --green: #0c5245;
+}
+
+h2 {
+  font-family: "Roboto";
+  color: var(--blue);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+h3 {
+  color: var(--light-pink);
+}
+
+p {
+  font-family: "IBM Plex Serif", serif;
+  color: var(--gray);
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.15em;
+}
+
+img {
+  width: 100%;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+}
+
+#header-nav {
+  width: 14em;
+}
+
+header img {
+  width: 7em;
+  margin-bottom: 2em;
+}
+
+#header-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-nav li {
+  list-style: none;
+}
+
+header a:hover {
+  color: var(--pink);
+}
