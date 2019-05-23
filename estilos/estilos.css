@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 :root {
   --blue: #2a3e69;
   --light-pink: #ffc1bd;
@@ -110,9 +114,10 @@ header a:hover {
 
 /* Latest Products and best-seller products */
 #latest-products,
-#best-sellers {
+#best-sellers,
+#newsletter {
   text-align: center;
-  padding: 1em;
+  padding: 0 1em;
 }
 
 #latest-products > h2,
@@ -144,4 +149,56 @@ header a:hover {
 #best-sellers .button {
   display: inline-block;
   margin: 4em 0;
+}
+
+/* Newsletter */
+#newsletter-image {
+  height: 30rem;
+  object-fit: cover;
+}
+
+#form-container {
+  background: var(--light-pink);
+  height: 41.5rem;
+  padding: 3em 2em;
+  margin-top: -0.3em;
+}
+
+#newsletter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-container > h3 {
+  color: #fff;
+  text-align: left;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+#form-container h2 {
+  color: var(--pink);
+  text-align: left;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+#newsletter-form input {
+  margin-bottom: 2.5em;
+  padding: 1em;
+  font-size: 0.9em;
+  font-weight: 600;
+  border: 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+#newsletter-form input:focus {
+  border: 2px solid var(--pink);
+}
+
+#newsletter-form input:nth-child(3) {
+  margin: 0;
 }
