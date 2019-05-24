@@ -23,7 +23,8 @@ h2 {
   font-family: "Roboto", sans-serif;
   color: var(--blue);
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 h3 {
@@ -33,6 +34,8 @@ h3 {
 p {
   font-family: "IBM Plex Serif", serif;
   color: var(--gray);
+  line-height: 1.6em;
+  font-size: 1.2em;
 }
 
 a {
@@ -62,7 +65,8 @@ img {
 #latest-products,
 #best-sellers,
 #newsletter,
-#collections {
+#collections,
+#blog {
   text-align: center;
   padding: 0 1em;
 }
@@ -71,7 +75,6 @@ img {
 #best-sellers > h2,
 #collections > h2 {
   font-size: 2em;
-  font-weight: 300;
 }
 
 /* Header */
@@ -123,8 +126,6 @@ header a:hover {
   color: var(--pink);
   margin-bottom: 0.5em;
   font-size: 2.7em;
-  font-weight: 300;
-  letter-spacing: 1px;
 }
 
 /* Latest Products and best-seller products */
@@ -136,14 +137,12 @@ header a:hover {
 .latest-title,
 .bs-title {
   margin-bottom: 0.5em;
-  font-weight: 300;
   font-size: 1.6em;
   padding: 0 0.5em;
 }
 
 .latest-description,
 .bs-description {
-  font-size: 1.2em;
   padding: 0 0.5em;
 }
 
@@ -184,8 +183,6 @@ header a:hover {
   text-align: left;
   margin-bottom: 1em;
   font-size: 2em;
-  font-weight: 300;
-  letter-spacing: 1px;
 }
 
 #newsletter-form input {
@@ -220,17 +217,16 @@ header a:hover {
   bottom: 1.25em;
   right: 0;
   left: 0;
-  font-weight: 300;
 }
 
 #shop-all-container {
   background: var(--light-green);
   padding: 4em;
+  margin-bottom: 4em;
 }
 
 #shop-all-container h2 {
   color: var(--green);
-  font-weight: 300;
   font-size: 1.8em;
   margin-bottom: 1em;
 }
@@ -243,4 +239,36 @@ header a:hover {
 
 #shop-all-container .button:hover {
   background: var(--blue);
+}
+
+/* Blog */
+#blog {
+  margin-bottom: 4em;
+}
+
+.blog-post {
+  text-align: left;
+}
+
+.blog-post h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.blog-post h2:nth-of-type(1) {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.blog-post img {
+  margin-bottom: 3em;
+}
+
+.blog-post p {
+  margin-bottom: 1em;
+}
+
+.blog-post .button-text {
+  color: var(--pink);
+  font-size: 1.08em;
 }
