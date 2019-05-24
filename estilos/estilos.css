@@ -66,7 +66,8 @@ img {
 #best-sellers,
 #newsletter,
 #collections,
-#blog {
+#blog,
+#about {
   text-align: center;
   padding: 0 1em;
 }
@@ -271,4 +272,35 @@ header a:hover {
 .blog-post .button-text {
   color: var(--pink);
   font-size: 1.08em;
+}
+
+/* About */
+#about-container {
+  background: var(--blue);
+  padding: 5em 4em;
+}
+
+#about-container h2 {
+  color: #fff;
+  font-size: 2.8em;
+  margin-bottom: 0.2em;
+}
+
+#about-container p {
+  margin-bottom: 2em;
+}
+
+#about-container .button {
+  display: inline-block;
+  background: #fff;
+  color: var(--pink);
+  font-size: 1.08em;
+}
+
+#about-container .button:hover {
+  background: var(--light-gray);
+}
+
+#about-image {
+  display: none;
 }
