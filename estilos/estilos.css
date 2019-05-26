@@ -354,3 +354,32 @@ footer img {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.94em;
 }
+
+/* Media queries */
+@media all and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  header img {
+    margin-bottom: 0;
+  }
+  header a {
+    font-size: 0.95em;
+    font-weight: 500;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  header {
+    max-width: 900px;
+  }
+}
+
+@media all and (min-width: 1270px) {
+  header {
+    max-width: 1200px;
+  }
+}
