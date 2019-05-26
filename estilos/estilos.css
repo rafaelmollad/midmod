@@ -49,6 +49,15 @@ img {
   width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
+header img,
+footer img {
+  width: 7em;
+}
+
 .button {
   background: var(--blue);
   color: #fff;
@@ -67,7 +76,8 @@ img {
 #newsletter,
 #collections,
 #blog,
-#about {
+#about,
+footer {
   text-align: center;
   padding: 0 1em;
 }
@@ -91,17 +101,12 @@ header {
 }
 
 header img {
-  width: 7em;
   margin-bottom: 2em;
 }
 
 #header-nav ul {
   display: flex;
   justify-content: space-between;
-}
-
-#header-nav li {
-  list-style: none;
 }
 
 header a:hover {
@@ -190,7 +195,7 @@ header a:hover {
   margin-bottom: 2.5em;
   padding: 1em;
   font-size: 0.9em;
-  font-weight: 600;
+  font-weight: 500;
   border: 0;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -303,4 +308,49 @@ header a:hover {
 
 #about-image {
   display: none;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  font-weight: 500;
+}
+
+footer img {
+  margin-bottom: 3em;
+}
+
+.more {
+  width: 80%;
+}
+
+#footer-nav {
+  margin-bottom: 1.2em;
+  width: 100%;
+}
+
+#footer-nav ul,
+.more ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footer-nav a,
+.more a {
+  font-size: 0.94em;
+}
+
+#footer-nav a:hover,
+.more a:hover {
+  color: var(--pink);
+}
+
+.more ul li:nth-child(3) {
+  color: var(--blue);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.94em;
 }
