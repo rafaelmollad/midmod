@@ -376,10 +376,39 @@ footer img {
   header {
     max-width: 900px;
   }
+
+  #banner-container {
+    position: relative;
+  }
+
+  #banner-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 60px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4em;
+    height: 50%;
+    min-height: 230px;
+    margin: auto auto;
+    max-width: 320px;
+    background: rgba(255, 255, 255, 0.9);
+  }
 }
 
 @media all and (min-width: 1270px) {
   header {
     max-width: 1200px;
+  }
+
+  #banner-container img {
+    height: 68vh;
+    object-fit: cover;
+  }
+
+  #banner-card {
+    right: 80px;
+    height: 40%;
   }
 }
