@@ -80,12 +80,23 @@ footer img {
 footer {
   text-align: center;
   padding: 0 1em;
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 #latest-products > h2,
 #best-sellers > h2,
 #collections > h2 {
   font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.product-image {
+  height: 30rem;
+  display: flex;
+  margin-bottom: 2em;
+  align-items: center;
+  background: #f6fafd;
 }
 
 /* Header */
@@ -135,9 +146,9 @@ header a:hover {
 }
 
 /* Latest Products and best-seller products */
-.latest-image,
-.bs-image {
-  margin: 2em 0;
+.latest,
+.best-seller {
+  margin-bottom: 2em;
 }
 
 .latest-title,
@@ -150,6 +161,9 @@ header a:hover {
 .latest-description,
 .bs-description {
   padding: 0 0.5em;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 450px;
 }
 
 #latest-products .button,
@@ -357,6 +371,16 @@ footer img {
 
 /* Media queries */
 @media all and (min-width: 768px) {
+  #latest-products,
+  #best-sellers,
+  #newsletter,
+  #collections,
+  #blog,
+  #about,
+  footer {
+    max-width: 720px;
+  }
+
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -370,9 +394,48 @@ footer img {
     font-size: 0.95em;
     font-weight: 500;
   }
+
+  #latest-container,
+  #bs-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .latest,
+  .best-seller {
+    width: 50%;
+    padding: 0 1em;
+  }
+
+  .latest-description,
+  .latest-title,
+  .bs-title,
+  .bs-description {
+    text-align: left;
+  }
+
+  .latest-description,
+  .bs-description {
+    width: 100%;
+    margin: 0;
+  }
+
+  .product-image {
+    height: 24rem;
+  }
 }
 
 @media all and (min-width: 1000px) {
+  #latest-products,
+  #best-sellers,
+  #newsletter,
+  #collections,
+  #blog,
+  #about,
+  footer {
+    max-width: 1000px;
+  }
+
   header {
     max-width: 900px;
   }
@@ -395,9 +458,34 @@ footer img {
     max-width: 320px;
     background: rgba(255, 255, 255, 0.9);
   }
+
+  #latest-products > h2 {
+    margin-top: 2em;
+  }
+
+  .latest,
+  .best-seller {
+    width: 25%;
+  }
+
+  .latest img,
+  .best-seller img {
+    height: 16em;
+    object-fit: cover;
+  }
 }
 
 @media all and (min-width: 1270px) {
+  #latest-products,
+  #best-sellers,
+  #newsletter,
+  #collections,
+  #blog,
+  #about,
+  footer {
+    max-width: 1270px;
+  }
+
   header {
     max-width: 1200px;
   }
@@ -410,5 +498,11 @@ footer img {
   #banner-card {
     right: 80px;
     height: 40%;
+  }
+
+  #latest-products,
+  #best-sellers {
+    max-width: 1270px;
+    margin: 0 auto;
   }
 }
