@@ -569,6 +569,26 @@ footer img {
     flex-direction: column;
     justify-content: center;
   }
+
+  /* About */
+  #about {
+    display: flex;
+    height: 30rem;
+  }
+
+  #about-container {
+    text-align: left;
+    padding: 6em 4em;
+  }
+
+  #about-image {
+    display: initial;
+  }
+
+  #about-image img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @media all and (min-width: 1270px) {
