@@ -118,6 +118,7 @@ footer {
   align-items: center;
   background: #f6fafd;
   overflow: hidden;
+  position: relative;
 }
 
 /* Header */
@@ -501,7 +502,7 @@ footer img {
 
   /* Collections */
   .collection-title {
-    bottom: 2.5em;
+    bottom: 1.5em;
   }
 
   .collection:nth-child(9) {
