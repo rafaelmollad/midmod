@@ -146,6 +146,10 @@ header a:hover {
 }
 
 /* Banner */
+#banner-container > img {
+  margin-left: -1px;
+}
+
 #banner-card {
   display: flex;
   flex-direction: column;
