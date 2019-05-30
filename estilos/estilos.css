@@ -69,6 +69,7 @@ footer img {
 
 .button:hover {
   background: var(--pink);
+  cursor: pointer;
 }
 
 .button:after,
@@ -82,6 +83,12 @@ footer img {
 
 .button-text:after {
   content: url(../img/arrow-red.svg);
+}
+
+.latest,
+.best-seller,
+.collection {
+  cursor: pointer;
 }
 
 #latest-products,
